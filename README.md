@@ -14,4 +14,4 @@ Used react js for client side rendering reactstrap for css
 
 Added validation for each field in form used formik for showing warnings related to values
 
-Deployed on render (url)[https://coding-test-mjpp.onrender.com]
+Deployed on render (https://coding-test-mjpp.onrender.com)[url]
