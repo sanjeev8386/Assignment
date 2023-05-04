@@ -10,8 +10,16 @@ Used bcrypt js for hashing password and then storing it into database
 
 Used jsonwebtoken for session validation of the user.
 
-Used react js for client side rendering reactstrap for css
+Used vite with react js for client side rendering reactstrap for css
 
 Added validation for each field in form used formik for showing warnings related to values
 
 Deployed on render (https://coding-test-mjpp.onrender.com)
+
+## To start the project
+1. Install `nodeJs v16.17.1`
+2. Install `yarn` package manager
+3. clone the repo
+5. do `yarn` in root directory then `cd admin` and then do `yarn` there as well
+6. create env file in root directory and update the latest env there
+7. Run `yarn dev` in root directory it will start backend and frontend
