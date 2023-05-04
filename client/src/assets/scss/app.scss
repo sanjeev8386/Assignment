@@ -1,0 +1,57 @@
+@import "node_modules/bootstrap-scss/bootstrap.scss";
+@import "color";
+@import "vendors/chartist/chartist";
+@import "vendors/themify.scss";
+@import "vendors/whether-icon.scss";
+@import "vendors/icofont.scss";
+@import "vendors/flag-icon.scss";
+@import "vendors/icoicon/icons";
+@import "vendors/fontawesome.scss";
+@import "vendors/animate/animate";
+@import "vendors/sticky/sticky";
+@import "vendors/todo/todo";
+
+
+
+// Datepicker
+@import "../node_modules/react-datepicker/dist/react-datepicker.css";
+
+// Timepicker
+@import "../node_modules/react-times/css/material/default.css";
+@import "../node_modules/react-times/css/classic/default.css";
+
+// Typeahead
+@import "../node_modules/react-bootstrap-typeahead/css/Typeahead.css";
+
+//  Dropzone
+@import "../node_modules/react-dropzone-uploader/dist/styles.css";
+
+// Drag&Drop
+@import "../node_modules/react-dragula/dist/dragula.css";
+
+
+@import "../node_modules/react-input-range/lib/css/index.css";
+
+// ReactToastify
+@import "../node_modules/react-toastify/dist/ReactToastify.css";
+
+//  ImageCrop
+@import "../node_modules/react-image-crop/dist/ReactCrop.css";
+
+//  calendar
+@import "../node_modules/react-big-calendar/lib/sass/styles.scss";
+@import "../node_modules/sweetalert2/src/sweetalert2.scss";
+
+//  Timeline
+@import "../node_modules/react-vertical-timeline-component/style.min.css";
+
+// Mde EDitor
+@import "../node_modules/easymde/dist/easymde.min.css";
+
+// Map
+@import "../node_modules/leaflet/dist/leaflet.css";
+
+// Image gallery
+@import "../node_modules/react-image-lightbox/style.css";
+
+
