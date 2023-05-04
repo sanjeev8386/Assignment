@@ -20,6 +20,6 @@ Deployed on render (https://coding-test-mjpp.onrender.com)
 1. Install `nodeJs v16.17.1`
 2. Install `yarn` package manager
 3. clone the repo
-5. do `yarn` in root directory then `cd admin` and then do `yarn` there as well
+5. do `yarn` in root directory then `cd client` and then do `yarn` there as well
 6. create env file in root directory and update the latest env there
 7. Run `yarn dev` in root directory it will start backend and frontend
