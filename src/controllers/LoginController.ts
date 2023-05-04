@@ -23,7 +23,6 @@ export class LoginController {
   ])
   private async login(req: Request, res: Response) {
     try {
-      
       const errors = validationResult(req);
 
       if (!errors.isEmpty()) {
@@ -60,6 +59,7 @@ export class LoginController {
       return res.status(OK).json({
         success: true,
         message: 'Login success!',
+        data: { name: user.name, email: user.email },
         token
       });
     } catch (error) {

@@ -41,6 +41,9 @@ const Rightbar = (props) => {
     setName(localStorage.getItem('Name'))
     if(localStorage.getItem("layout_version") === "dark-only"){
       setMoonlight(true)
+      document.body.className = "dark-only"
+    } else {
+      document.body.className = "light"
     }
   }, []);
 
@@ -189,7 +192,7 @@ const Rightbar = (props) => {
             <div className="media profile-media">
               <img className="b-r-10" src={authenticated ? auth0_profile.picture : profile} alt="" />
               <div className="media-body"><span>{authenticated ? auth0_profile.name :  name}</span>
-                <p className="mb-0 font-roboto">{Admin} <i className="middle fa fa-angle-down"></i></p>
+                <p className="mb-0 font-roboto">{JSON.parse(localStorage.getItem('loginUser')).data.name} <i className="middle fa fa-angle-down"></i></p>
               </div>
             </div>
             <ul className="profile-dropdown onhover-show-div">

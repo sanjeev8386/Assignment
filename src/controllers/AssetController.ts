@@ -13,15 +13,17 @@ const { UNAUTHORIZED, NOT_FOUND, OK } = StatusCodes;
 export class AssetController {
   @Get('')
   @Middleware([verifyToken])
-  private async getAllAssets(req: any, res:any) {
+  private async getAllAssets(req: any, res: any) {
     try {
-      const { pageSize, page } = req.query;
+      const { pageSize, pageNo } = req.query;
 
       const [error, result] = await asyncWrap(
         Assets.find({ isActive: true })
-          .skip((page - 1) * pageSize)
+          .skip((pageNo - 1) * pageSize)
           .limit(pageSize)
       );
+
+      const count = await Assets.count({ isActive: true });
 
       if (error) {
         return res.status(NOT_FOUND).json({
@@ -32,7 +34,8 @@ export class AssetController {
 
       return res.status(OK).json({
         success: true,
-        data: result
+        data: result,
+        total: count
       });
     } catch (error) {
       logger.error(error);

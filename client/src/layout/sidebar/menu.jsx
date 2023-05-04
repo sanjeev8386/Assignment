@@ -5,8 +5,7 @@ export const MENUITEMS = [
         menutitle: "General",
         menucontent: "Main menu",
         Items: [
-            { path: `/dashboard/home`, icon: Home, title: 'Dashboard', type: 'link' },
-            { path: `/dashboard/transaction`, icon: GitPullRequest, title: 'Transaction', type: 'link' },
+            { path: `/assets`, icon: Home, title: 'Assets', type: 'link' },
         ]
     },
 ]

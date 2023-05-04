@@ -19,7 +19,7 @@ const Assets: Schema = new Schema(
       required: true,
       trim: true
     },
-    desciption: {
+    description: {
       type: String,
       trim: true
     },
