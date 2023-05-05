@@ -4,7 +4,7 @@
 
 ### Used mongodb for storing users and assets data 
 
-Stored User data with name, email, gender, mobile number and passowrd.
+Stored User data with name, email and passowrd.
 
 Used bcrypt js for hashing password and then storing it into database
 
